@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#question-container {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#drop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 80px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+}
+
+.draggable {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.wrong {
+    background-color: #dc3545;
+}
+
+.message-container {
+    min-height: 30px;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-button {
+    background-color: #6c757d;
+}
+
+#next-button:hover {
+    background-color: #5a6268;
+}
+
+#finish-button {
+    background-color: #28a745;
+}
+
+#finish-button:hover {
+    background-color: #218838;
+}
+
+#score-container {
+    margin-top: 2em;
+    background-color: #e9f5e9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#score-container h2 {
+    color: #28a745;
+}
+
+#score-container p {
+    font-size: 1.1em;
+    color: #333;
+}
